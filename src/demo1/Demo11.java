@@ -64,5 +64,8 @@ public class Demo11 {
 			s_char[i] = str2.charAt(i);
 		}
 		System.out.println(String.copyValueOf(s_char, 0, 4));
+		
+		System.out.println(str.substring(0, 3));
+		System.out.println(str.substring(3));
 	}
 }
