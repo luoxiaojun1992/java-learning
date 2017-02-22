@@ -29,7 +29,7 @@ public class Demo11 {
 		System.out.println(str.contains("1"));
 		System.out.println(str.indexOf('1'));
 		
-		System.out.println(111 == 111);
+		System.out.println(112 == 111);
 		
 		System.out.println(Demo12.getConfig());
 		
@@ -63,6 +63,6 @@ public class Demo11 {
 		for (int i = 0; i < str2.length(); ++i) {
 			s_char[i] = str2.charAt(i);
 		}
-		System.out.println(str.copyValueOf(s_char, 0, 4));
+		System.out.println(String.copyValueOf(s_char, 0, 4));
 	}
 }
