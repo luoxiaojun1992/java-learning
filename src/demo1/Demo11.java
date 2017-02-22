@@ -47,5 +47,7 @@ public class Demo11 {
 		for (int i = 0; i < c.length; ++i) {
 			System.out.println(c[i]);
 		}
+		
+		System.out.println(Arrays.binarySearch(c, 2));
 	}
 }
