@@ -70,5 +70,7 @@ public class Demo11 {
 		
 		String lstr = "abcd";
 		System.out.println(lstr.toUpperCase());
+		String ustr = "ABCd";
+		System.out.println(ustr.toLowerCase());
 	}
 }
