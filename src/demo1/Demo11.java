@@ -19,7 +19,7 @@ public class Demo11 {
 		
 		int[] b = new int[10];
 		b[0] = 1;
-		int[] c = new int[]{1,2,3};
+		int[] c = new int[]{3,1,2};
 		System.out.println(b[0]);
 		System.out.println(c[0]);
 		
@@ -42,5 +42,10 @@ public class Demo11 {
 		
 		Arrays.fill(b, 1, 10, 8);
 		System.out.println(b[9]);
+		
+		Arrays.sort(c, 0, 3);
+		for (int i = 0; i < c.length; ++i) {
+			System.out.println(c[i]);
+		}
 	}
 }
