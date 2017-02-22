@@ -22,5 +22,11 @@ public class Demo11 {
 		System.out.println(c[0]);
 		
 		System.out.println(b.equals(c));
+		
+		String str = new String("12345");
+		System.out.println(str.contains("1"));
+		System.out.println(str.indexOf('1'));
+		
+		System.out.println(111 == 111);
 	}
 }
