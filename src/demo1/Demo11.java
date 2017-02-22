@@ -53,5 +53,10 @@ public class Demo11 {
 		String str2 = new String(new StringBuffer("6789"));
 		
 		System.out.println(str.concat(str2));
+		
+		StringBuffer str3 = new StringBuffer("6789");
+		System.out.println(str3.length());
+		System.out.println(str3.capacity());
+		System.out.println(str2.length());
 	}
 }
