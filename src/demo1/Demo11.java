@@ -39,5 +39,8 @@ public class Demo11 {
 		
 		int[] copyArray = Arrays.copyOf(c, 2);
 		System.out.println(copyArray[1]);
+		
+		Arrays.fill(b, 1, 10, 8);
+		System.out.println(b[9]);
 	}
 }
