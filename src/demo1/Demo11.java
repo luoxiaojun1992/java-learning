@@ -1,5 +1,7 @@
 package demo1;
 
+import java.util.Arrays;
+
 import demo1.Demo12;
 
 public class Demo11 {
@@ -34,5 +36,8 @@ public class Demo11 {
 		for (int i = 0; i < c.length; ++i) {
 			System.out.println(c[i]);
 		}
+		
+		int[] copyArray = Arrays.copyOf(c, 2);
+		System.out.println(copyArray[1]);
 	}
 }
