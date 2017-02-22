@@ -75,5 +75,7 @@ public class Demo11 {
 		System.out.println(str.split("3")[0]);
 		
 		System.out.println(str.replace('1', '3'));
+		System.out.println(str.replaceAll("12", "34"));
+		System.out.println(str.replaceFirst("12", "34"));
 	}
 }
