@@ -67,5 +67,8 @@ public class Demo11 {
 		
 		System.out.println(str.substring(0, 3));
 		System.out.println(str.substring(3));
+		
+		String lstr = "abcd";
+		System.out.println(lstr.toUpperCase());
 	}
 }
