@@ -1,6 +1,9 @@
 package demo1;
 
+import java.text.SimpleDateFormat;
 import java.util.Arrays;
+import java.util.Date;
+import java.util.TimeZone;
 
 import demo1.Demo12;
 
@@ -77,5 +80,10 @@ public class Demo11 {
 		System.out.println(str.replace('1', '3'));
 		System.out.println(str.replaceAll("12", "34"));
 		System.out.println(str.replaceFirst("12", "34"));
+		
+		Date d = new Date();
+		SimpleDateFormat formatter = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+		formatter.setTimeZone(TimeZone.getTimeZone("PRC"));
+		System.out.println(formatter.format(d));
 	}
 }
