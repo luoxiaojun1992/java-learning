@@ -49,5 +49,9 @@ public class Demo11 {
 		}
 		
 		System.out.println(Arrays.binarySearch(c, 2));
+		
+		String str2 = new String(new StringBuffer("6789"));
+		
+		System.out.println(str.concat(str2));
 	}
 }
