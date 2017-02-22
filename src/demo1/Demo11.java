@@ -73,5 +73,7 @@ public class Demo11 {
 		String ustr = "ABCd";
 		System.out.println(ustr.toLowerCase());
 		System.out.println(str.split("3")[0]);
+		
+		System.out.println(str.replace('1', '3'));
 	}
 }
