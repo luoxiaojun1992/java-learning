@@ -58,5 +58,11 @@ public class Demo11 {
 		System.out.println(str3.length());
 		System.out.println(str3.capacity());
 		System.out.println(str2.length());
+		
+		char[] s_char = new char[str2.length()];
+		for (int i = 0; i < str2.length(); ++i) {
+			s_char[i] = str2.charAt(i);
+		}
+		System.out.println(str.copyValueOf(s_char, 0, 4));
 	}
 }
