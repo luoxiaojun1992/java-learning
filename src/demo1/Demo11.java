@@ -28,5 +28,11 @@ public class Demo11 {
 		System.out.println(str.indexOf('1'));
 		
 		System.out.println(111 == 111);
+		
+		System.out.println(Demo12.getConfig());
+		
+		for (int i = 0; i < c.length; ++i) {
+			System.out.println(c[i]);
+		}
 	}
 }
