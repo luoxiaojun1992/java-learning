@@ -72,5 +72,6 @@ public class Demo11 {
 		System.out.println(lstr.toUpperCase());
 		String ustr = "ABCd";
 		System.out.println(ustr.toLowerCase());
+		System.out.println(str.split("3")[0]);
 	}
 }
