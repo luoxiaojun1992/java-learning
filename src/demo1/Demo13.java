@@ -19,6 +19,8 @@ public class Demo13 {
 		}
 		
 		System.out.println((new Demo12()).name);
+		
+		System.out.println(Demo12.father);
 	}
 
 }
