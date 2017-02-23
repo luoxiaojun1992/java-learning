@@ -23,6 +23,8 @@ public class Demo13 {
 		System.out.println(Demo12.father);
 		
 		System.out.println(Demo12.PRICE);
+		
+		System.out.println((new Demo12()).getValue());
 	}
 
 }

@@ -8,6 +8,10 @@ public class Demo12 {
 	final static double PRICE = 0.123;
 	
 	public int getValue() {
+		return _getValue();
+	}
+	
+	private static int _getValue() {
 		return 1;
 	}
 	
