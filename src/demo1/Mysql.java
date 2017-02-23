@@ -17,22 +17,29 @@ public class Mysql {
 		
 		String url = "jdbc:mysql://localhost:3306/sf" ;    
 	     String username = "root" ;   
-	     String password = "" ;   
+	     String password = "" ;
+	     Connection con = null;
+	     Statement stmt = null;
+	     ResultSet rs = null;
 	     try{   
-	    	 Connection con = DriverManager.getConnection(url , username , password ) ;   
-	    	 Statement stmt = con.createStatement();
-	    	 ResultSet rs = stmt.executeQuery("SELECT * FROM eagle") ;   
+	    	 con = DriverManager.getConnection(url , username , password ) ;   
+	    	 stmt = con.createStatement();
+	    	 rs = stmt.executeQuery("SELECT * FROM eagle") ;   
 	    	 while(rs.next()){   
 	             String eagle_id = rs.getString("eagle_id") ;
 	             System.out.println(eagle_id);
 	         }
-	    	 
-	    	 rs.close();
-	    	 stmt.close();
-	    	 con.close();
 	     }catch(SQLException se){   
 	    	 System.out.println("数据库连接失败！");   
 	    	 se.printStackTrace() ;   
+	     }finally{
+	    	 try {
+	    		 rs.close();
+	    		 stmt.close();
+		    	 con.close();
+	    	 } catch (SQLException se) {
+	    		System.out.println(se.getMessage()); 
+	    	 }
 	     }
 	}
 }
