@@ -14,4 +14,8 @@ public class Demo12 {
 	public static int getConfig() {
 		return 2;
 	}
+	
+	public Demo12() {
+		name = "hehe";
+	}
 }
