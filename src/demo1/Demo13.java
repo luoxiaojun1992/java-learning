@@ -25,6 +25,8 @@ public class Demo13 {
 		System.out.println(Demo14.PRICE);
 		
 		System.out.println((new Demo14()).getValue());
+		
+		System.out.println((new Demo14()).getValue2());
 	}
 
 }
