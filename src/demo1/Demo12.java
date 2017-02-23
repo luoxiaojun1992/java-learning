@@ -5,6 +5,8 @@ public class Demo12 {
 	
 	static String father = "George";
 	
+	final static double PRICE = 0.123;
+	
 	public int getValue() {
 		return 1;
 	}
