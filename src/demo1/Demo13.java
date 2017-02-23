@@ -3,6 +3,7 @@ package demo1;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import demo1.Demo12;
 
 public class Demo13 {
 
@@ -16,6 +17,8 @@ public class Demo13 {
 		while(i.hasNext()){
 			System.out.println(i.next().toString());
 		}
+		
+		System.out.println((new Demo12()).name);
 	}
 
 }

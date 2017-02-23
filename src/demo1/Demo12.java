@@ -1,6 +1,8 @@
 package demo1;
 
 public class Demo12 {
+	String name = "haha";
+	
 	public int getValue() {
 		return 1;
 	}
